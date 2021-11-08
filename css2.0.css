@@ -1,0 +1,301 @@
+/*  Basic Styling
+------------------------------------------------------- */
+* { box-sizing: border-box; }
+
+html {
+	font-family: Avenir, Helvetica, sans-serif;
+	background: #e4e4d5;
+	scroll-behavior: smooth;
+
+}
+body { margin: 0; }
+
+header {
+	margin-top: 4rem;
+    grid-area: my-header;
+}
+
+/*nav {
+    grid-area: my-nav;
+    background-color: cornflowerblue;
+}*/
+
+aside {
+    grid-area: my-aside;
+}
+
+section {
+    grid-area: my-section;
+}
+
+footer {
+    grid-area: my-footer;
+}
+h1 {
+	scroll-behavior: smooth;
+	text-transform: uppercase;	
+	font-size: 4rem;
+    margin: 0;
+    line-height: 1.2em;
+	display: grid;
+	grid-template-columns: repeat(19, 1fr);
+}
+h2 {
+    color: #e4e4d5;
+    background: #f9423a;
+    justify-self: center; 
+    font-size: 4rem ;
+    margin-right: 10%;    
+    padding-left: 10%;
+}
+h3 {
+    margin-left: 10rem;
+    padding-left: 5vw;
+    background: azure;
+}
+p {
+    display: block;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.viajes {
+	color: #f9423a;
+}
+
+/*main {
+    color: white;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4em 2em 1fr 4em 2em;
+    
+    /* TIPO DE DISEÑO: MOBILE FIRST */
+    /* como  inicialmente se construye la web es en una columna */
+    /* Tal y como se espera en una visualización de dispositivo mobil 
+    grid-template-areas:  
+    "my-header"
+    "my-section" 
+    "my-aside" 
+    "my-footer" 
+    "my-header";
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 4em 2em 1fr 4em;
+        grid-template-areas: 
+        "my-header my-header my-header" 
+        "my-section my-section my-aside" 
+        "my-section my-section my-aside" 
+        "my-footer my-footer my-footer";
+    }
+}
+
+@media (min-width: 1001px) {
+    main {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 4em 1fr 4em;
+        grid-template-areas: 
+        "my-header my-header my-header" 
+        "my-section my-section my-aside" 
+        "my-footer my-footer my-footer";
+    }
+}*/
+/*.titulo{
+    font-size: 1rem;
+    margin-right: 3rem;
+    background: #f9423a;
+    padding-right: 2rem;
+}   
+  
+.subtitulo {
+    margin-left: 10rem;
+    padding-left: 5vw;
+    background: azure; 
+}*/
+
+
+h1 span:nth-child(1) { /* v */
+	color: #f9423a;
+	grid-column: 10;
+	grid-row: 1;
+	text-align: center;
+
+}
+h1 span:nth-child(2) { /* i */
+	color: #f9423a;
+	grid-column: 10;
+	grid-row: 2;
+	text-align: center;
+
+}
+h1 span:nth-child(3) { /* A */
+	color: #f9423a;
+	grid-column: 10;
+	grid-row: 3;
+	text-align: center;
+
+}
+h1 span:nth-child(4) { /* j */
+	color: #f9423a;
+	grid-column: 10;
+	grid-row: 4;
+	text-align: center;
+
+}
+h1 span:nth-child(5) { /* e */
+	color: #f9423a;
+	grid-column: 10;
+	grid-row: 5;
+	text-align: center;
+
+}
+h1 span:nth-child(6) { /* s */
+	color: #f9423a;
+	grid-column: 10;
+	grid-row: 6;
+	text-align: center;
+
+}
+h1 span:nth-child(7) { /* Á */
+	grid-column: 9;
+	grid-row: 1;
+	text-align: end;
+
+}
+h1 span:nth-child(8) { /* ILA */
+	grid-column: 11;
+	grid-row: 1;	
+	text-align: initial;
+
+}
+h1 span:nth-child(9) { /* Valenc */
+	grid-column: 9;
+	grid-row: 2;
+	text-align: end;
+
+}
+h1 span:nth-child(10) {  /*A */
+	grid-column: 11;
+	grid-row: 2;
+	text-align: initial;
+
+}
+h1 span:nth-child(11) { /* SAL */
+	grid-column: 9;
+	grid-row: 3;
+	text-align: end;
+
+}
+h1 span:nth-child(12) { /*MANCA*/
+	grid-column: 11;
+	grid-row: 3;
+	text-align: initial;
+
+}
+h1 span:nth-child(13) {  /*BADA*/
+	grid-column: 9;
+	grid-row: 4;
+	text-align: end;
+
+}
+.C h1 span:nth-child(14) {  /*OZ*/
+	grid-column: 11;
+	grid-row: 4;
+	text-align: initial;
+
+}
+.C h1 span:nth-child(15) {  /*S*/
+	grid-column: 9;
+	grid-row: 5;
+	text-align: end;
+
+}
+h1 span:nth-child(16) {  /*VILLA*/
+	grid-column: 11;
+	grid-row: 5;
+	text-align: initial;
+
+}
+h1 span:nth-child(17) {  /*OUREN*/
+	grid-column: 9;
+	grid-row: 6;
+	text-align: end;
+
+}
+h1 span:nth-child(18) {  /*E*/
+	grid-column: 11;
+	grid-row: 6;
+	text-align: initial;
+
+}
+
+.slider { 
+	margin-left: -5rem;
+	width: 50%;	/*Ancho de la web que ocupa el slider*/
+	overflow: hidden;	/*Para que no se muestre parte de las imágenes contiguas*/
+	  }
+	  
+.slider ul {
+	display: flex;	/*Para que la disposición de las fotos sea en carrusel y no una sobre otra*/
+	padding: 0; /*distancia entre cada foto*/
+	width: 600%;	/*Hemos puesto este ancho porque hay 6 fotos, la última se corresponde con la 1ª para hacer simular el efecto de bucle infinito*/
+	animation: cambio 20s infinite ease;
+	animation-direction:normal;
+	  }
+	  
+.slider li {
+	width: 100%;
+	list-style: none;
+	  }	/*Para que cada imagen se ajuste y aparezca correctamente en el carrusel*/
+	  
+.slider img {
+	width: 100%;	/*Una imagen es el 100% de cada keyframe*/
+	  }
+	  
+	  @keyframes cambio {
+		  
+		  0% {
+			  margin-left: 0%;	/*Comienza la primera imagen en la posición 0*/
+		  }
+		  14% {
+			  margin-left: 0%;	/*Del 15 al 18 se mueve 100 a la izq*/
+		  }
+		  19% {	
+			  margin-left: -100%;	/*Del 19% al 34% de la duración del slider completo, el 2º keyframe está estático */
+		  }
+		  34% {
+			  margin-left: -100%;	/*Del 35 al 38 se mueven los keyframes 200 a la izq*/
+		  }
+		  39% {
+			  margin-left: -200%;
+		  }						/*Quieta*/
+		  54% {
+			  margin-left: -200%;
+		  }						/*Se mueve -300 (hacia la izq)*/
+		  59% {
+			  margin-left: -300%;
+		  }						/*Quieta*/
+		  74% {
+			  margin-left: -300%;
+		  }						/*Se mueve -400*/
+		  79% {
+			  margin-left: -400%;
+		  }						/*Quieta*/
+		  94% {
+			  margin-left: -400%;
+		  }						/*Se mueve -500*/
+		  99% {
+			  margin-left: -500%;
+		  }						/*Quieta*/
+		  100% {
+			  margin-left: -500%;
+		  }
+	  }
